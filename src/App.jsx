@@ -14,10 +14,6 @@ function App() {
   const containerRef = useRef(null);
   const [section, setSection] = useState('quote');
   const [quote, setQuote] = useState('');
-  const [imagePosition, setImagePosition] = useState({
-    left: 0,
-    top: 0
-  })
 
   const handleMouseMove = (event) => {
     const containerRect = containerRef.current.getBoundingClientRect();
