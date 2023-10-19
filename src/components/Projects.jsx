@@ -6,7 +6,7 @@ const Projects = () => {
         <nav>
             <ul>
                 <li><a href="https://github.com/J5Chen" rel="noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} />Github</a></li>
-                <li><a href="https://j5chen.github.io/pokemon-mem-game/" rel="noreferrer" target="_blank">Pokemon Memory Game</a></li>
+                <li><a href="https://j5chen.github.io/temp-pokemon-memgame/" rel="noreferrer" target="_blank">Pokemon Memory Game</a></li>
             </ul>
         </nav>
     )
