@@ -1,7 +1,10 @@
-
-:root{
-  background-image:url("./assets/carlos-torres-MHNjEBeLTgw-unsplash.jpg");
+:root {
+  overflow: hidden;
+  z-index: 0;
 }
+
+
+
 
 * {
   margin: 0;
@@ -15,16 +18,16 @@
 li {
   list-style: none;
   font-size: 2rem;
-  transition:ease-in-out;
+  transition: ease-in-out;
 }
 
-li:hover{
+li:hover {
   transform: translate(1rem, 0rem);
-} 
+}
 
 h1 {
   font-weight: 300;
-  font-size:6rem;
+  font-size: 6rem;
 }
 
 h3 {
@@ -32,26 +35,50 @@ h3 {
   font-style: italic;
 }
 
-.nav-bar{
+.nav-bar {
   font-size: 2rem;
 }
 
 .frame {
-  height: calc(100vh - 6rem); /* Subtract the desired margin (e.g., 3rem on top and 3rem on the bottom) */
-  margin: 3rem; /* Add margin around the frame */
+
+  height: calc(100vh - 6rem);
+  width: calc(100vw - 6rem);
+  /* Subtract the desired margin (e.g., 3rem on top and 3rem on the bottom) */
+  margin: 3rem;
+  /* Add margin around the frame */
   border-style: solid;
   border-color: rgb(232, 233, 234);
-  border-width: 0.3rem;
+  border-width: 0.4rem;
   padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+#temp{
+  position: absolute; 
+  border-style: solid;
+  border-color: rgb(197, 206, 215);
+  border-width: 0rem;
+  height:100vh;
+  width:100vw;
+  top: 0;
+  left:0;
+}
 .data {
   font-size: 2rem;
   max-width: 60%;
   align-self: self-end;
   flex-wrap: nowrap;
   /* Additional styles for data */
+}
+
+img {
+  position: absolute; 
+  height: 180vh;
+  width: 180vw;
+  object-fit: fill;
+  top: -30%;
+  left: -30%;
+  z-index: -1;
 }
